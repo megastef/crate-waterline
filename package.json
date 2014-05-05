@@ -1,0 +1,54 @@
+{
+  "name": "sails-crate
+  ",
+  "version": "0.10.0-rc1",
+  "description": "CRATE adapter for waterline",
+  "main": "index.js",
+  "author": "S. Thies",
+  "contributors": [
+    {
+      "name": "Stefan Thies",
+      "email": "s.thies@bigdata-analyst.de"
+    }
+  ],
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/megastef/sails-crate.git"
+  },
+  "keywords": [
+    "crate data",
+    "orm",
+    "waterline",
+    "sails",
+    "sailsjs",
+    "sails.js"
+  ],
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "mocha": "~1.12.0",
+    "waterline-adapter-tests": "~0.10.0",
+    "captains-log": "~0.11.1"
+  },
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "redis": "~0.8.4",
+    "async": "~0.2.9",
+    "waterline-errors": "~0.10.0",
+    "waterline-criteria": "~0.10.2",
+    "megastef/node-crate": "*"
+  },
+  "waterlineAdapter": {
+    "waterlineVersion": "~0.10.0",
+    "interfaces": [
+      "semantic",
+      "queryable",
+      "migratable",
+      "associations"
+    ]
+  }
+}
+
